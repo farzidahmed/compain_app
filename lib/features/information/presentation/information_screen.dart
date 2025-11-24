@@ -189,7 +189,7 @@ class _InformationScreenState extends State<InformationScreen> {
           /// Word Dropdown
           if (!wordLoading)
             _buildDropdown(
-              hint: "Select Word ".tr,
+              hint: "Select Word".tr,
               value: selectedWord,
               items: words,
               onChanged: (value) {
@@ -299,7 +299,7 @@ class _InformationScreenState extends State<InformationScreen> {
     return CustomButton(
       bgColor: AppColor.cFFFFFF,
       textStyle: TextFontStyle.headline14w400c3D4040mina,
-      btnName: "Write your complaint.".tr,
+      btnName: "Submit".tr,
       onTap: () {
         int wordNumber = banglaToEnglishNumber(selectedWord ?? "০");
 

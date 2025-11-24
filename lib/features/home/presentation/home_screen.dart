@@ -7,6 +7,7 @@ import 'package:bnp_app/features/home/presentation/widget/custom_carsoul_sileder
 import 'package:bnp_app/features/home/presentation/widget/custom_drawer_widget.dart';
 import 'package:bnp_app/gen/assets.gen.dart';
 import 'package:bnp_app/helpers/all_routes.dart';
+import 'package:bnp_app/helpers/helpers_method.dart';
 import 'package:bnp_app/helpers/navigation_service.dart';
 import 'package:bnp_app/helpers/ui_helpers.dart';
 import 'package:bnp_app/networks/api_access.dart';
@@ -67,6 +68,8 @@ class _HomeScreenState extends State<HomeScreen> {
     getGalleryRx.getGallery();
     getCarasoulRx.getCarasul();
     getProgrameRx.getProgramme();
+    getAreaRx.getArear();
+    //getWordRx.getWord(policeStation:getAreaRx. )
 
     /// Load saved language
     String savedLang = box.read(kKeyLanguage) ?? 'bd';
@@ -127,11 +130,24 @@ class _HomeScreenState extends State<HomeScreen> {
   AppBar _buildAppBar() {
     return AppBar(
       title: Row(
+        spacing: 12.w,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            "Safiqul Islam Milton".tr,
-            style: TextFontStyle.headline18w600c1A1A1AsfPro,
+          Expanded(
+            child: GestureDetector(
+              onTap: () {
+                showNameDialog(
+                  context: context,
+                  titile: "Safiqul Khan Islam Milton".tr,
+                );
+              },
+              child: Text(
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
+                "Safiqul Khan Islam Milton".tr,
+                style: TextFontStyle.headline18w600c1A1A1AsfPro,
+              ),
+            ),
           ),
           GestureDetector(
             onTap: () {
@@ -171,15 +187,28 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildBody() {
-    return SingleChildScrollView(
-      padding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Column(
-        children: [
-          UIHelper.verticalSpace(24.h),
-          _buildCarousel(),
-          UIHelper.verticalSpace(24.h),
-          _buildGridMenu(),
-        ],
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color(0xFF2E6895),
+            Color(0xFFCBC7C1),
+            // Color(0xFFB6B3AE),
+            Color(0xFF6A8BB4),
+          ],
+        ),
+      ),
+      child: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
+        padding: EdgeInsets.symmetric(horizontal: 20.w),
+        child: Column(
+          children: [
+            UIHelper.verticalSpace(24.h),
+            _buildCarousel(),
+            UIHelper.verticalSpace(24.h),
+            _buildGridMenu(),
+          ],
+        ),
       ),
     );
   }

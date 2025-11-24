@@ -156,7 +156,12 @@ class _ContactUsScreenState extends State<ContactUsScreen> {
                           icon: Assets.icons.twiter,
                           onTap: () {},
                         ),
-                        CustomIconWidget(icon: Assets.icons.web, onTap: () {}),
+                        CustomIconWidget(
+                          icon: Assets.icons.web,
+                          onTap: () {
+                            launchUrl(Uri.parse("https://miltondhaka15.com/"));
+                          },
+                        ),
                       ],
                     ),
                   ],
@@ -243,7 +248,7 @@ class CustomContactWidget extends StatelessWidget {
               Image.asset(Assets.images.milton.path, width: 32.h, height: 32.h),
 
               Text(
-                "Safiqul Islam Milton".tr,
+                "Safiqul Khan Islam Milton".tr,
                 style: TextFontStyle.headline14w400c3D4040mina,
               ),
             ],

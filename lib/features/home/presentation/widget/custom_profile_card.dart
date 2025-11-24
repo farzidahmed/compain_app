@@ -49,27 +49,19 @@ class ProfileCard extends StatelessWidget {
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(100.r),
-              child: Image.asset(
-                imagePath,
-                fit: BoxFit.cover,
-              ),
+              child: Image.asset(imagePath, fit: BoxFit.cover),
             ),
           ),
           SizedBox(height: 14.h),
           Text(
             name,
             style: TextFontStyle.headline18w600c1A1A1AsfPro,
+            textAlign: TextAlign.center,
           ),
           SizedBox(height: 8.h),
-          Text(
-            email,
-            style: TextFontStyle.headline14w400c3D4040mina,
-          ),
+          Text(email, style: TextFontStyle.headline14w400c3D4040mina),
           SizedBox(height: 8.h),
-          Text(
-            phone,
-            style: TextFontStyle.headline14w400c3D4040mina,
-          ),
+          Text(phone, style: TextFontStyle.headline14w400c3D4040mina),
         ],
       ),
     );

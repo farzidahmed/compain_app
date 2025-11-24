@@ -129,7 +129,6 @@ class UtillScreenMobile extends StatelessWidget {
           onGenerateRoute: RouteGenerator.generateRoute,
           home: const Loading(),
 
-          
         );
       },
     );

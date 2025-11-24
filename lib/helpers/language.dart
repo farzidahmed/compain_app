@@ -94,9 +94,13 @@ final class LocalString extends Translations {
       "We’ll send you a code to confirm your email":
           "We’ll send you a code to confirm your email",
       "Next": "Next",
+      "Select Word": "Select Word",
+      "Submit": "Submit",
     },
 
     'bd_BD': {
+      "Submit": "জমা দিন",
+      "Select Word": "ওয়ার্ড নির্বাচন করুন",
       "Enter Your OTP": "আপনার ওটিপি লিখুন",
       "Enter your 8 digit otp code": "আপনার ৮ সংখ্যার ওটিপি কোডটি লিখুন",
       "We’ll send you a code to confirm your email":
@@ -140,7 +144,7 @@ final class LocalString extends Translations {
       'Provide a picture (if any)': 'ছবি দিন (যদি থাকে)',
       'Complaint submitted': 'অভিযোগ জমা দেওয়া হয়েছে',
       'Write your complaint.': 'আপনার অভিযোগ লিখুন।',
-      "Safiqul Islam Milton": "শফিকুল ইসলাম মিল্টন",
+      "Safiqul Khan Islam Milton": "শফিকুল  ইসলাম খাঁন মিল্টন",
       "Submit your complaints and suggestions.":
           "আপনার অভিযোগ ও পরামর্শ জমা দিন।",
       "Provide information to extortionists and drug dealers":
@@ -154,7 +158,7 @@ final class LocalString extends Translations {
 
       "Contact Us": "যোগাযোগ করুন",
       "Contact Information": "যোগাযোগের তথ্য",
-      "Safiqul Islam Milton": "শফিকুল ইসলাম মিল্টন",
+      "Safiqul Khan Islam Milton": "শফিকুল  ইসলাম খাঁন মিল্টন",
       "abc@ gmail.com": "abc@ gmail.com",
       "Dhaka, Bangladesh": "ঢাকা, বাংলাদেশ",
       "Web link": "ওয়েব লিংক",
