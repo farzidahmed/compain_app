@@ -78,7 +78,7 @@ final class CustomFormField extends StatelessWidget {
       child: TextFormField(
         readOnly: isRead,
         cursorHeight: cursorHeight ?? 20.h,
-        cursorColor: AppColor.c2C3E50,
+        cursorColor: AppColor.cE2E5F0,
         focusNode: focusNode,
         obscureText: isPass ? isObsecure : false,
         textInputAction: textInputAction,
@@ -137,7 +137,7 @@ final class CustomFormField extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(borderRadius ?? 8.r),
             borderSide: BorderSide(
-              color: enableBorderColor ?? AppColor.c2C3E50,
+              color: enableBorderColor ?? AppColor.cE2E5F0,
               width: 0.2.w,
             ),
           ),

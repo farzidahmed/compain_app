@@ -277,3 +277,33 @@ void showCustomDialog({
     ),
   );
 }
+
+void showNameDialog({required BuildContext context, required String titile}) {
+  showDialog(
+    context: context,
+
+    builder: (context) => Dialog(
+      backgroundColor: Colors.transparent,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
+      insetPadding: EdgeInsets.symmetric(horizontal: 16.w),
+      child: Container(
+        width: double.infinity,
+
+        // margin: EdgeInsets.symmetric(horizontal: 16.w),
+        padding: EdgeInsets.all(16.sp),
+        decoration: BoxDecoration(
+          color: const Color(0xFFFFFFFF),
+          border: Border.all(color: Colors.white.withAlpha(41), width: 1.5),
+          borderRadius: BorderRadius.circular(20.r),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(titile, style: TextFontStyle.headline18w600c1A1A1AsfPro),
+            UIHelper.verticalSpace(8.h),
+          ],
+        ),
+      ),
+    ),
+  );
+}

@@ -1,14 +1,12 @@
 import 'dart:developer';
 
 import 'package:bnp_app/constants/app_constants.dart';
-import 'package:bnp_app/features/auth/presentation/login/login_screen.dart';
 import 'package:bnp_app/features/home/presentation/home_screen.dart';
 import 'package:bnp_app/helpers/di.dart';
 import 'package:bnp_app/helpers/helpers_method.dart';
 import 'package:bnp_app/networks/dio/dio.dart';
 import 'package:bnp_app/splash_screen.dart';
 import 'package:flutter/material.dart';
-
 
 class Loading extends StatefulWidget {
   const Loading({super.key});
@@ -36,7 +34,7 @@ class _LoadingState extends State<Loading> {
     if (data) {
       String token = appData.read(kKeyAccessToken);
       // log("Token is ===========> $token");
-       log("FCM Token is ===========> ${appData.read(kKeyFCMToken)}");
+      log("FCM Token is ===========> ${appData.read(kKeyFCMToken)}");
       DioSingleton.instance.update(token);
 
       // if (appData.read(kKeyRole) == 'customer') {
@@ -65,9 +63,10 @@ class _LoadingState extends State<Loading> {
       //     ? BottomNavScreen()
       //    // : const LoginScreen();
       //  : const OnboradingScreen();
-      return appData.read(kKeyIsLoggedIn)
-          ? const HomeScreen()
-          : const LoginScreen();
+      return HomeScreen();
+      // appData.read(kKeyIsLoggedIn)
+      //     ? const HomeScreen()
+      //     : const LoginScreen();
       //  return LoginScreen();
     }
   }

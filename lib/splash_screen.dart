@@ -1,9 +1,9 @@
-
 import 'package:bnp_app/constants/color.dart';
 import 'package:bnp_app/constants/text_font_style.dart';
 import 'package:bnp_app/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -26,7 +26,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             Text(
-              "শফিকুল ইসলাম মিল্টন ",
+              "Safiqul Khan Islam Milton".tr,
               style: TextFontStyle.headline16w400c3D4040mina,
             ),
           ],

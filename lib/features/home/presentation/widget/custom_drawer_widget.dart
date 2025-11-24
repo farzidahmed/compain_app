@@ -3,12 +3,8 @@ import 'package:bnp_app/features/home/presentation/widget/custom_info_widget.dar
 import 'package:bnp_app/features/home/presentation/widget/custom_profile_card.dart';
 import 'package:bnp_app/gen/assets.gen.dart';
 import 'package:bnp_app/helpers/all_routes.dart';
-import 'package:bnp_app/helpers/helpers_method.dart';
-import 'package:bnp_app/helpers/loading_helper.dart';
 import 'package:bnp_app/helpers/navigation_service.dart';
-import 'package:bnp_app/helpers/toast.dart';
 import 'package:bnp_app/helpers/ui_helpers.dart';
-import 'package:bnp_app/networks/api_access.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_utils/src/extensions/export.dart';
@@ -24,7 +20,7 @@ class CustomDrawerWidget extends StatelessWidget {
         children: [
           ProfileCard(
             imagePath: Assets.images.milton.path,
-            name: "Sofiqul Islam Milton".tr,
+            name: "Safiqul Khan Islam Milton".tr,
             email: "milton.dhaka15@gmail.com".tr,
             phone: "01904383963".tr,
           ),
@@ -88,35 +84,35 @@ class CustomDrawerWidget extends StatelessWidget {
           ),
           UIHelper.verticalSpace(36.h),
 
-          InfoRow(
-            iconPath: Assets.icons.logout,
-            text: "Logout".tr,
-            textStyle: TextFontStyle.headline14w400c3D4040sfPro,
-            onTap: () {
-              //NavigationService.navigateTo(Routes.aboutUsScreen);
-              showCustomDialog(
-                context: context,
-                titile: 'LogOut'.tr,
-                subTitile: 'Are you sure you want to log out account?'.tr,
-                confirmButtonName: 'Yes, Log out'.tr,
-                cancleButtonName: 'No'.tr,
-                img: '',
-                yesTap: () {
-                  logoutRX.logOut().waitingForSucess().then((success) {
-                    if (success) {
-                      ToastUtil.showLongToast("Log out successfully");
-                      NavigationService.navigateToReplacementUntil(
-                        Routes.loginScreen,
-                      );
-                    }
-                  });
-                },
-                noTap: () {
-                  NavigationService.goBack;
-                },
-              );
-            },
-          ),
+          // InfoRow(
+          //   iconPath: Assets.icons.logout,
+          //   text: "Logout".tr,
+          //   textStyle: TextFontStyle.headline14w400c3D4040sfPro,
+          //   onTap: () {
+          //     //NavigationService.navigateTo(Routes.aboutUsScreen);
+          //     showCustomDialog(
+          //       context: context,
+          //       titile: 'LogOut'.tr,
+          //       subTitile: 'Are you sure you want to log out account?'.tr,
+          //       confirmButtonName: 'Yes, Log out'.tr,
+          //       cancleButtonName: 'No'.tr,
+          //       img: '',
+          //       yesTap: () {
+          //         logoutRX.logOut().waitingForSucess().then((success) {
+          //           if (success) {
+          //             ToastUtil.showLongToast("Log out successfully");
+          //             NavigationService.navigateToReplacementUntil(
+          //               Routes.loginScreen,
+          //             );
+          //           }
+          //         });
+          //       },
+          //       noTap: () {
+          //         NavigationService.goBack;
+          //       },
+          //     );
+          //   },
+          // ),
         ],
       ),
     );

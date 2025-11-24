@@ -283,7 +283,7 @@ class _CadabajScreenState extends State<CadabajScreen> {
     return CustomButton(
       bgColor: AppColor.cFFFFFF,
       textStyle: TextFontStyle.headline14w400c3D4040mina,
-      btnName: "Write your complaint".tr,
+      btnName: "Submit".tr,
       onTap: () {
         int wordNumber = banglaToEnglishNumber(selectedWord ?? "০");
 
