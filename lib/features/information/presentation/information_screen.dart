@@ -103,7 +103,7 @@ class _InformationScreenState extends State<InformationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.cF9FAFB,
+      backgroundColor: AppColor.cB1DAE0,
       appBar: _buildAppBar(),
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 20.w),

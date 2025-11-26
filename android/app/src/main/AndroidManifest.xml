@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
      <uses-permission android:name="android.permission.INTERNET"/> 
     <application
-        android:label="bnp_app"
+        android:label="Safiqul Islam Khan Milton"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

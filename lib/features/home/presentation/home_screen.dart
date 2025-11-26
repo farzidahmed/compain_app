@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.cF9FAFB,
+      backgroundColor: AppColor.c57787F,
       drawer: Drawer(child: CustomDrawerWidget()),
       appBar: _buildAppBar(),
       body: _buildBody(),
@@ -129,6 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   AppBar _buildAppBar() {
     return AppBar(
+      backgroundColor: AppColor.c57787F,
       title: Row(
         spacing: 12.w,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -187,28 +188,16 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildBody() {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Color(0xFF2E6895),
-            Color(0xFFCBC7C1),
-            // Color(0xFFB6B3AE),
-            Color(0xFF6A8BB4),
-          ],
-        ),
-      ),
-      child: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.symmetric(horizontal: 20.w),
-        child: Column(
-          children: [
-            UIHelper.verticalSpace(24.h),
-            _buildCarousel(),
-            UIHelper.verticalSpace(24.h),
-            _buildGridMenu(),
-          ],
-        ),
+    return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Column(
+        children: [
+          UIHelper.verticalSpace(24.h),
+          _buildCarousel(),
+          UIHelper.verticalSpace(24.h),
+          _buildGridMenu(),
+        ],
       ),
     );
   }
