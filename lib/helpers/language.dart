@@ -144,7 +144,7 @@ final class LocalString extends Translations {
       'Provide a picture (if any)': 'ছবি দিন (যদি থাকে)',
       'Complaint submitted': 'অভিযোগ জমা দেওয়া হয়েছে',
       'Write your complaint.': 'আপনার অভিযোগ লিখুন।',
-      "Safiqul Khan Islam Milton": "শফিকুল  ইসলাম খাঁন মিল্টন",
+      "Safiqul Islam Khan Milton": "শফিকুল  ইসলাম খান মিল্টন",
       "Submit your complaints and suggestions.":
           "আপনার অভিযোগ ও পরামর্শ জমা দিন।",
       "Provide information to extortionists and drug dealers":
@@ -158,7 +158,7 @@ final class LocalString extends Translations {
 
       "Contact Us": "যোগাযোগ করুন",
       "Contact Information": "যোগাযোগের তথ্য",
-      "Safiqul Khan Islam Milton": "শফিকুল  ইসলাম খাঁন মিল্টন",
+      "Safiqul Islam Khan Milton": "শফিকুল  ইসলাম খান মিল্টন",
       "abc@ gmail.com": "abc@ gmail.com",
       "Dhaka, Bangladesh": "ঢাকা, বাংলাদেশ",
       "Web link": "ওয়েব লিংক",

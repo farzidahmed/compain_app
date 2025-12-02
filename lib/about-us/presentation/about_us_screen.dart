@@ -1,4 +1,5 @@
 import 'package:bnp_app/about-us/model/about_us_repsponse.dart';
+import 'package:bnp_app/constants/color.dart';
 import 'package:bnp_app/constants/text_font_style.dart';
 import 'package:bnp_app/networks/api_access.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,9 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.cB1DAE0,
       appBar: AppBar(
+        backgroundColor: AppColor.cB1DAE0,
         title: Text(
           "About us".tr,
           style: TextFontStyle.headline16w400c3D4040mina,

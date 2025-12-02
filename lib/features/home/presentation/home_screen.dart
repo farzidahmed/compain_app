@@ -118,8 +118,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.cF9FAFB,
-      drawer: Drawer(child: CustomDrawerWidget()),
+      backgroundColor: AppColor.cB1DAE0,
+      drawer: Drawer(
+        backgroundColor: AppColor.cB1DAE0,
+        child: CustomDrawerWidget(),
+      ),
       appBar: _buildAppBar(),
       body: _buildBody(),
     );
@@ -129,6 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   AppBar _buildAppBar() {
     return AppBar(
+      backgroundColor: AppColor.cB1DAE0,
       title: Row(
         spacing: 12.w,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -138,13 +142,13 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: () {
                 showNameDialog(
                   context: context,
-                  titile: "Safiqul Khan Islam Milton".tr,
+                  titile: "Safiqul Islam Khan Milton".tr,
                 );
               },
               child: Text(
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
-                "Safiqul Khan Islam Milton".tr,
+                "Safiqul Islam Khan Milton".tr,
                 style: TextFontStyle.headline18w600c1A1A1AsfPro,
               ),
             ),
@@ -187,28 +191,16 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildBody() {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Color(0xFF2E6895),
-            Color(0xFFCBC7C1),
-            // Color(0xFFB6B3AE),
-            Color(0xFF6A8BB4),
-          ],
-        ),
-      ),
-      child: SingleChildScrollView(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.symmetric(horizontal: 20.w),
-        child: Column(
-          children: [
-            UIHelper.verticalSpace(24.h),
-            _buildCarousel(),
-            UIHelper.verticalSpace(24.h),
-            _buildGridMenu(),
-          ],
-        ),
+    return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Column(
+        children: [
+          UIHelper.verticalSpace(24.h),
+          _buildCarousel(),
+          UIHelper.verticalSpace(24.h),
+          _buildGridMenu(),
+        ],
       ),
     );
   }

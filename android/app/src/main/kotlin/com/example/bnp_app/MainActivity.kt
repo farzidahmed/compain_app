@@ -1,4 +1,4 @@
-package com.example.bnp_app
+package com.hello.dhaka15_app
 
 import io.flutter.embedding.android.FlutterActivity
 

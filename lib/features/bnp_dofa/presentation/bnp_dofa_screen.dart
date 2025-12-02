@@ -25,11 +25,9 @@ class _BnpDofaScreenState extends State<BnpDofaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.cF9FAFB,
-
+      backgroundColor: AppColor.cB1DAE0,
       appBar: AppBar(
-        backgroundColor: AppColor.cF9FAFB,
-
+        backgroundColor: AppColor.cB1DAE0,
         title: Text(
           "BNP's 31 points".tr,
           style: TextFontStyle.headline16w400c3D4040mina,
