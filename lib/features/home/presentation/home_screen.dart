@@ -118,8 +118,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.c57787F,
-      drawer: Drawer(child: CustomDrawerWidget()),
+      backgroundColor: AppColor.cB1DAE0,
+      drawer: Drawer(
+        backgroundColor: AppColor.cB1DAE0,
+        child: CustomDrawerWidget(),
+      ),
       appBar: _buildAppBar(),
       body: _buildBody(),
     );
@@ -129,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   AppBar _buildAppBar() {
     return AppBar(
-      backgroundColor: AppColor.c57787F,
+      backgroundColor: AppColor.cB1DAE0,
       title: Row(
         spacing: 12.w,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,13 +142,13 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: () {
                 showNameDialog(
                   context: context,
-                  titile: "Safiqul Khan Islam Milton".tr,
+                  titile: "Safiqul Islam Khan Milton".tr,
                 );
               },
               child: Text(
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
-                "Safiqul Khan Islam Milton".tr,
+                "Safiqul Islam Khan Milton".tr,
                 style: TextFontStyle.headline18w600c1A1A1AsfPro,
               ),
             ),

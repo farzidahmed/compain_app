@@ -20,7 +20,7 @@ class CustomDrawerWidget extends StatelessWidget {
         children: [
           ProfileCard(
             imagePath: Assets.images.milton.path,
-            name: "Safiqul Khan Islam Milton".tr,
+            name: "Safiqul Islam Khan Milton".tr,
             email: "milton.dhaka15@gmail.com".tr,
             phone: "01904383963".tr,
           ),

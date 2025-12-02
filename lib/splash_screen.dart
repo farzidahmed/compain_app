@@ -26,7 +26,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             Text(
-              "Safiqul Khan Islam Milton".tr,
+              "Safiqul Islam Khan Milton".tr,
               style: TextFontStyle.headline16w400c3D4040mina,
             ),
           ],

@@ -32,11 +32,9 @@ class _ContactUsScreenState extends State<ContactUsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.cF9FAFB,
-
+      backgroundColor: AppColor.cB1DAE0,
       appBar: AppBar(
-        backgroundColor: AppColor.cF9FAFB,
-
+        backgroundColor: AppColor.cB1DAE0,
         title: Text(
           "Contact Us".tr,
           style: TextFontStyle.headline16w400c3D4040mina,
@@ -248,7 +246,7 @@ class CustomContactWidget extends StatelessWidget {
               Image.asset(Assets.images.milton.path, width: 32.h, height: 32.h),
 
               Text(
-                "Safiqul Khan Islam Milton".tr,
+                "Safiqul Islam Khan Milton".tr,
                 style: TextFontStyle.headline14w400c3D4040mina,
               ),
             ],
@@ -298,10 +296,12 @@ class CustomContactWidget extends StatelessWidget {
             spacing: 16.w,
             children: [
               // Image.asset(Assets.images.milton.path,width: 32.h,height: 32.h,),
-              GestureDetector(
+              InkWell(
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
                 onTap: webTap,
                 child: Text(
-                  "Web link".tr,
+                  "https://miltondhaka15.com".tr,
                   style: TextFontStyle.headline14w400c3D4040mina,
                 ),
               ),

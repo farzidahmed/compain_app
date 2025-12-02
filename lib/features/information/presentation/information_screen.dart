@@ -123,7 +123,7 @@ class _InformationScreenState extends State<InformationScreen> {
 
   AppBar _buildAppBar() {
     return AppBar(
-      backgroundColor: AppColor.cF9FAFB,
+      backgroundColor: AppColor.cB1DAE0,
       title: Text(
         "Submit your complaints and suggestions.".tr,
         style: TextFontStyle.headline16w400c3D4040mina,
