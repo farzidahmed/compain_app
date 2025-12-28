@@ -17,7 +17,7 @@ plugins {
 android {
     namespace = "com.hello.dhaka15_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "25.1.8937393"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -28,9 +28,10 @@ android {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
+    // Remove or modify the packaging block
     packaging {
         jniLibs {
-            keepDebugSymbols.add("**/*.so")
+            useLegacyPackaging = true
         }
     }
 
@@ -48,7 +49,7 @@ android {
             val storePass = keystoreProperties.getProperty("storePassword")
             val alias = keystoreProperties.getProperty("keyAlias")
             val keyPass = keystoreProperties.getProperty("keyPassword")
-            
+
             if (storeFilePath != null && storePass != null && alias != null && keyPass != null) {
                 storeFile = file(storeFilePath)
                 storePassword = storePass
