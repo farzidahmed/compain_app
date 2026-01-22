@@ -15,7 +15,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hello.dhaka15_app"
+    namespace = "com.hello.dhaka15.new_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "25.1.8937393"
 
@@ -36,7 +36,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.hello.dhaka15_app"
+        applicationId = "com.hello.dhaka15.new_app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
