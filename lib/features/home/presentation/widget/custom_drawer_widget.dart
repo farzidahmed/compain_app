@@ -82,6 +82,16 @@ class CustomDrawerWidget extends StatelessWidget {
               NavigationService.navigateTo(Routes.aboutUsScreen);
             },
           ),
+          UIHelper.verticalSpace(24.h),
+
+          InfoRow(
+            iconPath: Assets.icons.about,
+            text: "About app".tr,
+            textStyle: TextFontStyle.headline14w400c3D4040sfPro,
+            onTap: () {
+              NavigationService.navigateTo(Routes.aboutAppScreen);
+            },
+          ),
           UIHelper.verticalSpace(36.h),
 
           // InfoRow(
