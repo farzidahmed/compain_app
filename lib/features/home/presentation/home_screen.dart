@@ -197,6 +197,20 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           UIHelper.verticalSpace(24.h),
+          Container(
+            padding: EdgeInsets.all(16.sp),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.redAccent),
+              borderRadius: BorderRadius.circular(12.r),
+            ),
+            child: Text(
+              "This app is not affiliated with or endorsed by any government or police department.It is an independent platform for submitting complaints and suggestions only.",
+              style: TextFontStyle.headline14w400c3D4040mina.copyWith(
+                color: Colors.black,
+              ),
+            ),
+          ),
+          UIHelper.verticalSpace(24.h),
           _buildCarousel(),
           UIHelper.verticalSpace(24.h),
           _buildGridMenu(),
