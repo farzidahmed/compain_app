@@ -1,7 +1,7 @@
 import java.util.Properties
 import java.io.FileInputStream
 
-val keystorePropertiesFile = File(rootProject.projectDir.parentFile, "key.properties")
+val keystorePropertiesFile = rootProject.file("key.properties")
 val keystoreProperties = Properties()
 
 if (keystorePropertiesFile.exists()) {
@@ -15,7 +15,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hello.dhaka15.new_app"
+    namespace = "com.hello.dhaka.unofficial"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
@@ -36,7 +36,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.hello.dhaka15.new_app"
+        applicationId = "com.hello.dhaka.unofficial"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -45,7 +45,7 @@ android {
 
     signingConfigs {
         create("release") {
-            val storeFilePath = keystoreProperties.getProperty("keystoreFile")
+            val storeFilePath = keystoreProperties.getProperty("storeFile")
             val storePass = keystoreProperties.getProperty("storePassword")
             val alias = keystoreProperties.getProperty("keyAlias")
             val keyPass = keystoreProperties.getProperty("keyPassword")
